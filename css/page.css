@@ -310,7 +310,7 @@
         background: url('../images/section8_bg.png') left center / cover no-repeat;
     }
     section.storeArea div{
-        color: #fff; background-color: rgba(0,0,0,0.6);
+        color: #fff;
     }
     section.storeArea > div h2{
         font-size: 28px; padding: 60px 0 0;
