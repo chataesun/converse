@@ -3631,7 +3631,7 @@
         list-style: none; display: inline-block;
         font-size: 24px; width: 47%; padding: 10px 6px;
     }
-    section.about_converse ul.tabMenu li:hover{
+    section.about_converse ul.tabMenu li.active{
         color: white; background-color: black;
     }
     section.about_converse h2{
