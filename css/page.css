@@ -2008,7 +2008,7 @@
        color: white;
    }
    section[class*='great'] div > a:first-of-type{
-        background-color: black; width: 70%;
+        background-color: black; width: 100%;
    }
    section[class*='great'] div > a > *:not(img){   
         position: absolute;
@@ -2034,7 +2034,7 @@
        display: block; line-height: 2.5vw; font-size: 2vw; font-weight: 300;
    }
    section[class*='great'] div > ul{
-       display: flex; flex-flow: row wrap; justify-content: space-evenly;
+       display: flex; flex-flow: row wrap; justify-content: flex-end;
    }
    section[class*='great'] div > ul li{
         flex: 1 auto; max-width: 200px; list-style: none;
