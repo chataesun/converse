@@ -1415,7 +1415,7 @@
         max-width: 450px; width: 100%;
     }
     section[class*='detail'] > div{
-        width: 85%; padding-left: 25px;
+        width: 100%;
     }
     section[class*='detail'] > div h2{
         font-size: 22px; line-height: 30px; font-weight: 600; margin-bottom: 20px;
