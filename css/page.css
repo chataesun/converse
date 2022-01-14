@@ -2008,7 +2008,7 @@
        color: white;
    }
    section[class*='great'] div > a:first-of-type{
-        background-color: black; width: 100%;
+        background-color: black; width: 75%;
    }
    section[class*='great'] div > a > *:not(img){   
         position: absolute;
@@ -2019,7 +2019,7 @@
     }
    section.greatArea div > a:before{
        content: 'C'; font-size: 19vw; position: absolute;
-       left: 8vw; bottom: 5vw; z-index: 1; font-family: 'Roboto'; font-weight: 500;
+       left: 2vw; bottom: 5vw; z-index: 1; font-family: 'Roboto'; font-weight: 500;
        width: 25%;
    }
    section[class*='great'] div > a > strong{
