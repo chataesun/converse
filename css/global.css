@@ -204,7 +204,7 @@ section > h2{
     section[class*='list'],
     section[class*='detail'],
     section[class*='etc']{
-        max-width: 1080px; margin: 0 auto;
+        max-width: 1000px; margin: 0 auto;
     }
     header.main_header{
         background-color: #ffaf69;
