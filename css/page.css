@@ -1386,7 +1386,7 @@
         list-style: none; margin-bottom: 30px; line-height: 0;
     }
     section[class*='detail'] > ul li:not(:last-child){
-        width: 82%; padding: 0 25px;
+        width: 100%;
     }
     section[class*='detail'] > ul li:nth-child(5){
         margin-bottom: 200px;
@@ -1412,7 +1412,7 @@
         font-size: 15px; font-weight: 300; line-height: 44px;
     }
     section[class*='detail'] > ul li:last-child img{
-        max-width: 280px; width: 100%;
+        max-width: 450px; width: 100%;
     }
     section[class*='detail'] > div{
         width: 85%; padding-left: 25px;
