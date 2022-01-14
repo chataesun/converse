@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converse</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/import.css">
+    <style>
+        
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+        #floating-panel {
+          position: absolute;
+          top: 10px;
+          left: 25%;
+          z-index: 5;
+          background-color: #fff;
+          padding: 5px;
+          border: 1px solid #999;
+          text-align: center;
+          font-family: 'Roboto','sans-serif';
+          line-height: 30px;
+          padding-left: 10px;
+        }
+
+      #floating-panel {
+        margin-left: -100px;
+      }
+    </style>
+</head>
+<body>
+    <header class="main_header">
+        <div>
+            <!-- button -->
+            <button class="material-icons btnOpen">
+                menu
+            </button>
+            <h1>
+                <a href="index.html">
+                    main header logo
+                </a>
+            </h1>
+            <!-- aside -->
+            <aside>
+                <button class="material-icons btnClose">
+                    close
+                </button>
+                <nav> 
+                    <ul>
+                        <li class="menu_logo">
+                            <a href="index.html">
+                                <img src="images/menu_hover_logo.png" alt="menu logo">
+                            </a>
+                        </li>
+                        <li class="chuck_list robo">
+                            <a href="list_chuck70.html">CHUCK 70</a>
+                            <ol class="noto">
+                                <li>
+                                    <a href="list_lowers.html">로우 얼쓰카모</a>
+                                </li>
+                                <li>
+                                    <a href="list_valentine.html">발렌타인 데이</a>
+                                </li>
+                                <li>
+                                    <a href="list_vintage.html">빈티지 캔버스</a>
+                                </li>
+                                <li>
+                                    <a href="list_summerdays.html">서머 데이즈</a>
+                                </li>
+                                <li>
+                                    <a href="list_summerdays_wash.html">서머 데이즈 워시</a>
+                                </li>
+                                <li>
+                                    <a href="list_seasonal_leather.html">시즈널 레더</a>
+                                </li>
+                                <li>
+                                    <a href="list_seasonal_converse.html">시즈널 캔버스</a>
+                                </li>
+                                <li>
+                                    <a href="list_alt.html">알트 익스플로레이션</a>
+                                </li>
+                                <li>
+                                    <a href="list_oriental.html">오리엔탈</a>
+                                </li>
+                                <li>
+                                    <a href="list_indigo.html">인디고 보로</a>
+                                </li>
+                                <li>
+                                    <a href="list_color_block.html">컬러 블록</a>
+                                </li>
+                                <li>
+                                    <a href="list_tri_Panel.html">트라이패널</a>
+                                </li>
+                                <li>
+                                    <a href="list_floral_print.html">플로럴 프린트</a>
+                                </li>
+                                <li>
+                                    <a href="list_city.html">하트 오브 더 시티</a>
+                                </li>
+                            </ol>
+                        </li>
+                        <li class="taylor_list robo">
+                            <a href="list_chucktaylor_allstar.html">CHCUKTAYLOR ALLSTAR</a>
+                            <ol>
+                                <li>
+                                    <a href="list_rh_seasonal_color.html">런스타 하이크 시즈널 컬러</a>
+                                </li>
+                                <li>
+                                    <a href="list_rh_pride.html">런스타 하이크 프라이드</a>
+                                </li>
+                                <li>
+                                    <a href="list_allstar_cx.html">척테일러 올스타 CX</a>
+                                </li>
+                                <li>
+                                    <a href="list_basic_converse.html">데인티 베이직 캔버스</a>
+                                </li>
+                                <li>
+                                    <a href="list_renewnit.html">리뉴니트</a>
+                                </li>
+                                <li>
+                                    <a href="list_archive_print.html">리프트 아카이브 프린트</a>
+                                </li>
+                                <li>
+                                    <a href="list_lift_converse.html">리프트 캔버스</a>
+                                </li>
+                                <li>
+                                    <a href="list_allstar_move.html">척테일러 올스타 무브</a>
+                                </li>
+                                <li>
+                                    <a href="list_seasonal_color.html">시즈널 컬러</a>
+                                </li>
+                                <li>
+                                    <a href="list_anodized_metal.html">아노다이즈드 메탈</a>
+                                </li>
+                                <li>
+                                    <a href="list_jungle_sin.html">정글 신</a>
+                                </li>
+                                <li>
+                                    <a href="list_allstar_classic.html">척테일러 올스타 클래식</a>
+                                </li>
+                                <li>
+                                    <a href="list_tonal_weaving.html">토널 위빙</a>
+                                </li>
+                                <li>
+                                    <a href="list_pride.html">프라이드</a>
+                                </li>
+                            </ol>
+                        </li>
+                        <li class="noto">
+                            <a href="etc_order_check.html">회원/비회원 주문조회</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <div>
+                <a href="etc_login.html" class="material-icons-outlined">
+                    account_circle
+                </a>
+                <button class="material-icons searchOpen">
+                    search
+                </button>
+                <a href="etc_cart_no.html" class="material-icons-outlined">
+                    local_mall
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="slideArea">
+        <h2>slider</h2>
+        <div class="sliderContainer">
+            <ul class="slider">
+                <li>
+                    <figure>
+                        <img src="images/main_slider.png" alt="컨버스 프라이드 컬렉션을 출시합니다.">
+                        <figcaption>
+                            <dl>
+                                <dt class="robo">PRIDE COLLECTION</dt>
+                                <dd class="noto">올 여름, 진정한 자기표현의 가치를 찾아낸 기쁨을 축하하며 컨버스 프라이드 컬렉션을 출시합니다.</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/main_slider_02.png" alt="creationg converse">
+                        <figcaption>
+                            <dl>
+                                <dt class="robo">자신만의 컬러로 늘 새로움을 만들어 내는 아티스트</dt>
+                                <dd class="noto">ALWAYS CREATING AND EXPERIMENTING</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/main_slider_03.png" alt="third slider">
+                        <figcaption>
+                            <dl>
+                                <dt class="robo">Tri-Panel Run Star Hike</dt>
+                                <dd class="noto">눈에 띄는 스타일. 새로운 트라이 패널 디자인의 Run Star Hike를 흙빛 톤으로 표현했습니다. 뉴트럴 쉐이드는 힐과 텅에 포인트를 줍니다. 몰딩된 플랫폼과 톱니 모양의 고무 밑창은 놓칠 수 없는 스타일의 외관을 향상시킵니다.</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <a href="" class="material-icons btnBack">
+                
+            </a>
+            <a href="" class="material-icons btnForward">
+                
+            </a>
+        </div>
+    </section>
+    <section class="modelArea">
+        <div class="sliderContainer">
+            <ul class="pslider">
+                <li>
+                    <img src="images/section2_01.jpg" alt="converse model slider">
+                </li>
+                <li>
+                    <img src="images/section2_02.jpg" alt="converse model slider">
+                </li>
+                <li>
+                    <img src="images/section2_03.jpg" alt="converse model slider">
+                </li>
+                <li>
+                    <img src="images/section2_04.jpg" alt="converse model slider">
+                </li>
+                <li>
+                    <img src="images/section2_05.jpg" alt="converse model slider">
+                </li>
+            </ul>
+            <a href="" class="material-icons btnPrev">
+                
+            </a>
+            <a href="" class="material-icons btnNext">
+                
+            </a>
+        </div>
+        <h2 class="robo">WHITE CONVERSE</h2>
+        <a href="white_converse.html" class="noto">바로가기</a>
+    </section>
+    <section class="greatArea">
+        <h2>CHUCK 70 GREAT OUTDOORS</h2>
+        <div>
+            <a href="list_chuck70.html">
+                <strong class="robo">
+                    HUCK70 GREATOUTDOORS
+                    <small class="noto">세가지 다른 컬러의 오버레이 디자인으로 완성된 척70과 함께 활기찬 발걸음을 내딛어 보세요.</small>    
+                </strong>               
+            </a>
+            <ul>
+                <li>
+                    <a href="detail_summerdays_wash_bl.html">
+                        <img src="images/section3_01.jpg" alt="summerdays wash img">
+                        <img src="images/section3_01h.png" alt="">
+                        <strong class="noto">척 70 서머데이즈 워시</strong>
+                        <small>99,000원</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="detail_indigo_bl.html">
+                        <img src="images/section3_02.jpg" alt="">
+                        <img src="images/section3_02h.jpg" alt="">
+                        <strong class="noto">척 70 인디고 보로</strong>
+                        <small>99,000원</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="detail_alt_mv.html">
+                        <img src="images/section3_03.png" alt="">
+                        <img src="images/section3_03h.png" alt="">
+                        <strong class="noto">척 70 알트 익스플로레이션</strong>
+                        <small>95,000원</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="detail_alt_mn.html">
+                        <img src="images/section3_04.png" alt="">
+                        <img src="images/section3_04h.png" alt="">
+                        <strong class="noto">척 70 알트 익스플로레이션</strong>
+                        <small>95,000원</small>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- ? background로 처리. -->
+    </section>
+    <section class="summerwaveArea">
+        <h2>
+            <mark>SUMMER</mark><mark>WAVE!!</mark>
+            <!-- 좌 / 우 분할 -->
+        </h2>
+        <figure>
+            <img src="images/section4_main.png" alt="converse summerwave">
+            <figcaption>
+                <dl>
+                    <dt class="robo"><mark>SUMMER</mark><mark>WAVE</mark></dt>
+                    <!-- 좌 / 우 분할 -->
+                    <dd class="noto">여름에 어울리는 스타일, 자연스러운 색상, 타이다이에서 영감을 받은 은은한 컬러 디테일은 어떤 스타일의 착장에도 어울리는 여유로운 분위기를 선사합니다.</dd>
+                </dl>
+                 <a href="" class="noto">타이-다이제품 보러가기</a>
+            </figcaption>
+        </figure>
+    </section>
+    <section class="converseiframe">
+        <h2>converse iframe</h2>
+        <iframe  src="https://www.youtube.com/embed/SCE5s_sQ3NE?" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section class="bestArea">
+        <h2>CONVERSE BEST SELLER</h2>
+        <ul>
+            <li>
+                <a href="detail_allstar_classic_bk.html">
+                    <strong class="noto">척테일러 올스타 클래식</strong>
+                    <small>59,000원</small>
+                </a>
+            </li>
+            <li>
+                <a href="detail_allstar_classic_rd.html">
+                    <strong class="noto">척테일러 올스타 클래식</strong>
+                    <small>59,000원</small>
+                </a>
+            </li>
+            <li>
+                <a href="detail_allstar_classic_nv.html">
+                    <strong class="noto">척테일러 올스타 클래식</strong>
+                    <small>59,000원</small>
+                </a>
+            </li>
+            <li>
+                <a href="detail_allstar_classic_wh.html">
+                    <strong class="noto">척테일러 올스타 클래식</strong>
+                    <small>59,000원</small>
+                </a>
+            </li>
+        </ul>
+        <!-- ? background로 처리 -->
+    </section>
+    <section class="greatwhiteArea">
+        <h2>WHITE CONVERSE</h2>
+        <div>
+            <a href="list_chucktaylor_allstar.html">
+                <strong class="robo">WHITE CONVERSE</strong>
+                <small>하얀 캔버스에 담긴 올스타즈만의 이야기. 올 여름, 나만이 담아낼 수 있는 스타일을 화이트 캔버스 컬렉션과 함께 표현해 보세요.</small>
+            </a>
+            <ul>
+                <li>
+                    <a href="detail_vintage_wh.html">
+                        <img src="images/section7_01.png" alt="">
+                        <img src="images/section7_01h.png" alt="">
+                        <strong class="noto">척 70 빈티지 캔버스</strong>
+                        <small>99,000원</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="detail_alt_wh.html">
+                        <img src="images/section7_02.png" alt="">
+                        <img src="images/section7_02h.png" alt="">
+                        <strong class="noto">척 70 알트익스플로레이션</strong>
+                        <small>99,000원</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="detail_lift_converse_wh.html">
+                        <img src="images/section7_03.png" alt="">
+                        <img src="images/section7_03h.png" alt="">
+                        <strong class="noto">척테일러 올스타 리프트 캔버스</strong>
+                        <small>99,000원</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="detail_anodized_metal_wh.html">
+                        <img src="images/section7_04.png" alt="">
+                        <img src="images/section7_04h.png" alt="">
+                        <strong class="noto">척테일러 올스타 아노다이즈드</strong>
+                        <small>99,000원</small>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--background로 처리-->
+    </section>
+    <section class="storeArea">
+        <div>
+        <h2>CONVERSE STORE</h2>
+            <div id="floating-panel">
+                <input type="button" value="로드뷰보기" onclick="toggleStreetView();"></input>
+            </div>
+            <div id="map"></div>
+            <!--google map API script-->
+            <script>
+                var panorama;
+                function initMap() {        
+                //map Load
+                var myLatLng = { lat: 37.55696, lng: 126.92336};
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 17,
+                    center: myLatLng,
+                    streetViewControl: false
+                  });
+                
+                    //mapStyle
+                  var styles = [
+                    {
+                        stylers: [
+                          { hue: "#000000" },
+                          { saturation: -100 }
+                        ]
+                    }, {
+                        featureType: "road",
+                        elementType: "geometry", //geometry.fill 지형지물 구조의 채우기, geometry.stroke 지형지물의 스트로크
+                        stylers: [
+                          { lightness: 0 },
+                          { visibility: "simplified" }
+                          //기본 on, off , simplified 가시성은 해당 지형지물에서 일부 스타일 지형지물을 제거
+                        ]
+                    }, {
+                        featureType: "all",
+                        // 지형지물 all : 모든요소 표시, road : 길만 표시
+                        elementType: "labels",
+                        // featureType의 요소에 해당하는 라벨 표시, labels.icon : 지형지물 레이블 내 아이콘만, labels.text : 레이블의 텍스트만 선택, labels.text.fill 레이블의채우기만, label.text.stroke 레이블텍스트의 선만
+                        stylers: [
+                          { visibility: "on" }
+                          // 보여줄거냐 말거냐
+                        ]
+                    }
+                  ];
+        
+                  map.setOptions({ styles: styles });
+        
+                //marker Set
+                  var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    title: '포르쉐 한국지사'
+                  });
+        
+                //streetView
+                  panorama = map.getStreetView();
+                  panorama.setPosition(myLatLng);
+                  panorama.setPov(/** @type {google.maps.StreetViewPov} */({
+                      heading: 265,
+                      pitch: 0
+                  }));
+        
+                // To add the marker to the map, call setMap();
+                  marker.setMap(map);
+        
+                // infoWindow
+                  var contentString = '<div id="content">' +
+          '<div id="siteNotice">' +
+          '</div>' +
+          '<h1 id="firstHeading" class="firstHeading">포르쉐 한국 지사</h1>' +
+          '<div id="bodyContent">' +
+          '<p>Rangali Island, Rangali 20077 Maldives</p>' +
+          '<p>+960 668-0629</p>' +          
+          '<p>Attribution: Conrad Maldives Rangali Island</p>' +
+          '</div>' +
+          '</div>';
+        
+                  var infowindow = new google.maps.InfoWindow({
+                      content: contentString
+                  });
+                  marker.addListener('click', function () {
+                      infowindow.open(map, marker);
+                  });
+                }
+        
+                //streetView Toggle
+                function toggleStreetView() {
+                    var toggle = panorama.getVisible();
+                    if (toggle == false) {
+                        panorama.setVisible(true);
+                    } else {
+                        panorama.setVisible(false);
+                    }
+                }
+            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9CdEwZzUVAfn7bbHtujlPywu38AxgGrc&signed_in=true&callback=initMap"></script>
+            <ul class="noto">
+                <li>
+                    <h3>홍대지점</h3>
+                    <!-- :before {content: '-'} -->
+                    <ol>
+                        <li>
+                            02-6952-1908
+                        </li>
+                        <li>
+                            매일 11:00 ~ 23:00
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <h3>타임스퀘어점</h3>
+                    <ol>
+                        <li> 
+                            02-2638-2560
+                        </li>
+                        <li> 
+                            매일 10:30 ~ 22:00
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <h3>중동점</h3>
+                    <ol>
+                        <li>
+                            0507-1347-7782
+                        </li>
+                        <li>
+                            평일 10:30 ~ 20:00 주말 10:30 ~ 20:30
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <h3>EXIT 홍대점</h3>
+                    <ol>
+                        <li>
+                            02-2250-7755
+                        </li>
+                        <li>
+                            매일 11:00 ~ 22:30
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <h3>목동점</h3>
+                    <ol>
+                        <li>
+                            02-2163-3565
+                        </li>
+                        <li>
+                            평일 10:30 ~ 22:00 주말 10:30 ~ 22:00
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <h3>일산점</h3>
+                    <ol>
+                        <li>
+                            031-909-3025
+                        </li>
+                        <li>
+                            평일 10:30 ~ 20:00
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <h3>송도점</h3>
+                    <ol>
+                        <li> 
+                            0507-1321-2465
+                        </li>
+                        <li>
+                            매일 10:30 ~ 22:00
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <h3>안산점</h3>
+                    <ol>
+                        <li> 
+                            031-412-7934
+                        </li>
+                        <li>
+                            매일 10:30 ~ 20:00
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        <!--icon background로 처리-->
+    </section>
+    <footer>
+        <div>
+            <h2>
+                <a href="index.html">
+                    <img src="images/footer_logo.png" alt="footer logo">
+                </a>
+            </h2>
+            <ul>
+                <li>
+                    <a href="etc_about_converse.html" class="noto">컨버스에 대하여</a>
+                </li>
+                <li>
+                    <a href="etc_sign_up.html" class="noto">회원가입</a>
+                </li>
+                <li>
+                    <a href="etc_terms_and_conditions.html" class="noto">이용약관</a>
+                </li>
+                <li>
+                    <a href="etc_personal.html" class="noto">개인정보 처리방침</a>
+                </li>
+                <li>
+                    <a href="etc_order_check.html" class="noto">주문배송 조회</a>
+                </li>
+            </ul>
+            <address class="noto">
+                (유)컨버스 코리아 | 대표 주형준 | 개인정보책임 주형준 | 사업자 등록번호 220-88-74818 | 통신판매업 신고번호 제 2016-서울강남-00478호 | 통신판매업자 신원정보 확인<br>
+                주소 : 서울특별시 강남구 테해란로 152(역삼동) 강남파이낸스센터 32층 | 상담시간 : 월-금 AM 09:00 - PM 05:30 주말/공휴일 휴무
+            </address>
+            <!-- address -->
+        </div>
+    </footer>
+</body>
+</html>

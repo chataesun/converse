@@ -1,0 +1,573 @@
+.noto{
+    font-family: "Noto Sans KR";
+}
+.robo{
+    font-family: "Roboto";
+}
+section.converseiframe iframe{
+    width: 100%; height: 500px;
+}
+section > h2{
+    text-align: center; margin-bottom: 45px; font-size: 28px; font-weight: 700;
+    text-decoration: underline;
+}
+@media screen and (max-width: 767px){
+    header > div,
+    footer > div,
+    section.summerwaveArea,
+    section.greatoutdoors,
+    section.bestArea,
+    section.storeArea > div,
+    section.whiteArea,
+    section.modelArea,
+    section[class*='list'],
+    section[class*='detail'],
+    section[class*='etc']{
+        max-width: 720px; margin: 0 auto;
+    }
+    /* header fin */
+    header.main_header{
+        background-color: #ffaf69;
+    }
+    header.main_header > div h1 a{
+        background: url('../images/header_logo.png') center / contain no-repeat;
+    }
+    header.main_header > div div a,
+    header.main_header > div div button{
+        color: #6b492c;
+    }
+    header.etc_header{
+        background-color: black; opacity: 0.9;
+    }
+    header.etc_header > div h1 a{
+        background: url('../images/menu_hover_logo.png') center / contain no-repeat;
+    }
+    header.etc_header .material-icons,
+    header.etc_header > div div a{
+        color: white;
+    }
+    header{
+        width: 98%; position: fixed;
+        left: 0; top: 0; z-index: 10;
+        padding: 0 1%;
+    }
+    header > div{
+        position: relative;
+    }
+    header > div .material-icons{
+        background-color: transparent; border: none; font-size: 32px; line-height: 48px;
+        cursor: pointer; padding: 0;
+    }
+    header > div button.material-icons.btnOpen{
+        position: absolute; left: 0; top: 0;
+    }
+    header > div h1{
+        max-width: 105px; width: 100%;
+        text-indent: -9999px; margin: 0 auto;
+    }
+    header > div h1 a{
+        display: block; padding: 15% 0;
+    }
+    header > div h1 a img{
+        width: 100%;
+    }
+    header > div aside{
+        max-width: 345px; height: 100%; width: 65%;
+        position: fixed;  left: -65%;  background-color: black; opacity: 90%;
+        transition: left 0.75s ease-in-out; text-align: right;
+        padding: 0 1%; box-sizing: border-box;
+    }
+    header > div aside.active{
+        left: 0;
+    }
+    header > div aside button.btnClose{
+        color: white; font-size: 24px;
+    }
+    header > div aside nav{
+        text-align: center;
+    }
+    header > div aside nav ul{
+        list-style: none;
+    }
+    header > div aside nav ul > li:first-of-type{
+        margin-bottom: 35px;
+    }
+    header > div aside nav ul > li:first-of-type a img{
+        max-width: 140px; width: 100%;
+    }
+    header > div aside nav ul li{ 
+        margin-top: 30px;
+    }
+    header > div aside nav ul li > a{
+        color: white; text-decoration: none; display: block;
+        font-size: 16px; line-height: 23px;
+    }
+    header > div aside nav ul li > a img{
+        max-width: 150px;
+    }
+    header > div aside nav ul .chuck_list > *:not(:first-child){
+        display: none;
+    }
+    header > div aside nav ul .chuck_list:hover > *{
+        display: block;
+    }
+    header > div aside nav ul .taylor_list > *:not(:first-child){
+        display: none;
+    }
+    header > div aside nav ul .taylor_list:hover > *{
+        display: block;
+    }
+    header > div div{
+        position: absolute; right: 0; top: 0;
+    }
+    header > div div a.material-icons{
+        text-decoration: none; display: inline-block;
+        line-height: 48px; font-size: 20px; margin-left: 0;
+    }
+    header > div div .material-icons,
+    header > div div .material-icons-outlined{
+        font-size: 28px; margin-left: 15px;
+        display: none;
+    }
+    header > div div .material-icons-outlined{
+        vertical-align: 2%; display: inline-block;
+        font-size: 20px; margin-left: 5px; line-height: 46px;
+    }
+    section[class*='list'] div.pager{
+        position: relative; margin: 0 auto; max-width: 412px;
+    }
+    section[class*='list'] div.pager > a{
+        position: absolute; width: 7%; line-height: 21px; text-align: center; font-size: 14px; font-weight: 700;
+        color: #7d7d7d;
+    }
+    section[class*='list'] div.pager > a:first-of-type{
+        left: 0; bottom: 0; 
+    }
+    section[class*='list'] div.pager > a:last-of-type{
+        right: 0; bottom: 0;
+    }
+    section[class*='list'] div.pager ol{
+        text-align: center; padding: 0 10px;
+        box-sizing: border-box;
+    }
+    section[class*='list'] div.pager ol li{
+        display: inline-block;
+    }
+    section[class*='list'] div.pager ol li a{
+        line-height: 25px; width: 34px; display: block;
+        font-size: 14px; font-weight: 500; color: #7d7d7d; background-color: white;
+    }
+    section[class*='list'] div.pager ol li a:hover{
+        box-shadow: 0 5px 20px #dfe0e5;
+        color: black;
+    }
+    footer{
+        padding: 40px 0;
+        background-color: black;
+    }
+    footer > div{
+        padding: 0 10%; box-sizing: border-box;
+    }
+    footer > div h2{
+        width: 100%; max-width: 191px; margin: 0 auto;
+    }
+    footer > div h2 a{
+        display: block;
+    }
+    footer > div h2 a img{
+        width: 100%;
+    }
+    footer > div ul{
+        text-align: center; margin: 35px auto 25px;
+    }
+    footer > div ul li{
+        display: block; list-style: none; margin: 25px;
+    }
+    footer > div ul li a{
+        text-decoration: none; color: white;
+    }
+    footer > div address{
+        color: white; line-height: 26px; font-size: 12px;
+        font-style: normal; margin: 11px; 
+    }
+    /* footer fin */
+}
+@media screen and (min-width:768px) and (max-width:1279px){
+    header > div,
+    footer > div,
+    section.summerwaveArea,
+    section.greatoutdoors,
+    section.bestArea,
+    section.storeArea > div,
+    section.whiteArea,
+    section.modelArea,
+    section[class*='list'],
+    section[class*='detail'],
+    section[class*='etc']{
+        max-width: 1000px; margin: 0 auto;
+    }
+    header.main_header{
+        background-color: #ffaf69;
+    }
+    header.main_header > div h1 a{
+        background: url('../images/header_logo.png') center center / contain no-repeat;
+    }
+    header.main_header > div div a,
+    header.main_header > div div button{
+        color: #6b492c;
+    }
+    header.etc_header{
+        background-color: black; opacity: 0.9;
+    }
+    header.etc_header > div h1 a{
+        background: url('../images/menu_hover_logo.png') center center / contain no-repeat;
+    }
+    header.etc_header .material-icons,
+    header.etc_header > div div a{
+        color: white;
+    }
+    header{
+        width: 98%; position: fixed;
+        left: 0; top: 0; z-index: 10;
+        padding: 0 1%;
+    }
+    header > div:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    header > div > *:not(div){
+        float: left;
+    }
+    header > div .material-icons{
+        background-color: transparent; border: none; font-size: 40px; line-height: 64px;
+        cursor: pointer; padding: 0;
+    }
+    header > div h1{
+        width: 12%; min-width: 155px; margin-left: 1%;
+        text-indent: -9999px;
+    }
+    header > div h1 a{
+        display: block; padding: 15% 0;
+    }
+    header > div h1 a img{
+        width: 100%;
+    }
+    header > div aside{
+        max-width: 345px; height: 100%; width: 30%;
+        position: fixed;  left: -30%;  background-color: black; opacity: 90%;
+        transition: left 0.75s ease-in-out; text-align: right;
+        padding: 0 1%; box-sizing: border-box;
+    }
+    header > div aside.active{
+        left: 0;
+    }
+    header > div aside button.btnClose{
+        color: white; font-size: 24px;
+    }
+    header > div aside nav{
+        text-align: center;
+    }
+    header > div aside nav ul{
+        list-style: none;
+    }
+    header > div aside nav ul > li:first-of-type{
+        margin-bottom: 35px;
+    }
+    header > div aside nav ul li{ 
+        margin-top: 30px;
+    }
+    header > div aside nav ul li > a{
+        color: white; text-decoration: none;
+    }
+    header > div aside nav ul .chuck_list > *:not(:first-child){
+        display: none;
+    }
+    header > div aside nav ul .chuck_list:hover > *{
+        display: block;
+    }
+    header > div aside nav ul .taylor_list > *:not(:first-child){
+        display: none;
+    }
+    header > div aside nav ul .taylor_list:hover > *{
+        display: block;
+    }
+    header > div div{
+        float: right; vertical-align: middle;
+    }
+    header > div div a{
+        text-decoration: none;
+        line-height: 62px; font-size: 16px;
+    }
+    header > div div a:not(:last-child){
+        float: left;
+    }
+    header > div div a:nth-child(2){
+        margin-left: 10px;
+    }
+    header > div div .material-icons,
+    header > div div .material-icons-outlined{
+        font-size: 28px; margin-left: 15px;
+    }
+    header > div div .material-icons-outlined{
+        vertical-align: 2%; line-height: 64px;
+    }
+    section[class*='list'] div.pager{
+        position: relative; margin: 0 auto; max-width: 412px;
+    }
+    section[class*='list'] div.pager > a{
+        position: absolute; width: 7%; line-height: 90px; text-align: center; font-size: 18px; font-weight: 700;
+        color: #7d7d7d;
+    }
+    section[class*='list'] div.pager > a:first-of-type{
+        left: 0; top: 0; 
+    }
+    section[class*='list'] div.pager > a:last-of-type{
+        right: 0; top: 0;
+    }
+    section[class*='list'] div.pager ol{
+        text-align: center; padding: 23px 11%;
+        box-sizing: border-box;
+    }
+    section[class*='list'] div.pager ol li{
+        display: inline-block;
+    }
+    section[class*='list'] div.pager ol li a{
+        line-height: 45px; width: 50px; display: block;
+        font-size: 18px; font-weight: 500; color: #7d7d7d; background-color: white;
+        border-radius: 25px; transition-duration: 0.5s;
+    }
+    section[class*='list'] div.pager ol li a:hover{
+        box-shadow: 0 5px 20px #dfe0e5;
+        color: black;
+    }
+    footer{
+        padding: 4% 2%;
+        background-color: black;
+    }
+    footer > div{
+        position: relative; padding-left: 22%; box-sizing: border-box;
+    }
+    footer > div:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    footer > div > *:not(address){
+        float: left;
+    }
+    footer > div h2{
+        position: absolute; left: 0; top: 0;
+        width: 13%; max-width: 223px;
+    }
+    footer > div h2 a{
+        display: block;
+    }
+    footer > div h2 a img{
+        width: 100%; min-width: 150px;
+    }
+    footer > div ul{
+        text-align: left; margin: 0 0 3% 2%; width: 100%;
+    }
+    footer > div ul li{
+        display: inline-block; list-style: none; margin-left: 1%;
+    }
+    footer > div ul li:not(:last-child):after{
+        content: '|'; color: white;
+    }
+    footer > div ul li a{
+        text-decoration: none; color: white; margin-right: 10px;
+        font-size: 14px;
+    }
+    footer > div address{
+        clear: both;
+        color: white; line-height: 26px; font-size: 13px;
+        font-style: normal; margin-left: 17px;
+    }
+    /* footer fin */
+}
+@media screen and (min-width:1280px){
+    header > div,
+    footer > div,
+    section.summerwaveArea,
+    section.greatoutdoors,
+    section.bestArea,
+    section.storeArea > div,
+    section.whiteArea,
+    section.modelArea,
+    section[class*='list'],
+    section[class*='detail'],
+    section[class*='etc']{
+        max-width: 1680px; margin: 0 auto;
+    }
+    header.main_header{
+        background-color: #ffaf69;
+    }
+    header.main_header > div h1 a{
+        background: url('../images/header_logo.png') center center / contain no-repeat;
+    }
+    header.main_header > div div a,
+    header.main_header > div div button{
+        color: #6b492c;
+    }
+    header.etc_header{
+        background-color: black; opacity: 0.9;
+    }
+    header.etc_header > div h1 a{
+        background: url('../images/menu_hover_logo.png') center center / contain no-repeat;
+    }
+    header.etc_header .material-icons,
+    header.etc_header > div div a{
+        color: white;
+    }
+    header{
+        width: 98%; position: fixed;
+        left: 0; top: 0; z-index: 10;
+        padding: 0 1%;
+    }
+    header > div:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    header > div > *:not(div){
+        float: left;
+    }
+    header > div .material-icons{
+        background-color: transparent; border: none; font-size: 40px; line-height: 64px;
+        cursor: pointer; padding: 0;
+    }
+    header > div h1{
+        width: 11.36%; min-width: 191px; margin-left: 1%;
+        text-indent: -9999px;
+    }
+    header > div h1 a{
+        display: block; padding: 12% 0;
+    }
+    header > div h1 a img{
+        width: 100%;
+    }
+    header > div aside{
+        max-width: 345px; height: 100%; width: 20%;
+        position: fixed;  left: -20%;  background-color: black; opacity: 90%;
+        transition: left 0.75s ease-in-out; text-align: right;
+        padding: 0 1%; box-sizing: border-box;
+    }
+    header > div aside.active{
+        left: 0;
+    }
+    header > div aside button.btnClose{
+        color: white; font-size: 24px;
+    }
+    header > div aside nav{
+        text-align: center;
+    }
+    header > div aside nav ul{
+        list-style: none;
+    }
+    header > div aside nav ul > li:first-of-type{
+        margin-bottom: 35px;
+    }
+    header > div aside nav ul li{ 
+        margin-top: 30px;
+    }
+    header > div aside nav ul li > a{
+        color: white; text-decoration: none;
+    }
+    header > div aside nav ul .chuck_list > *:not(:first-child){
+        display: none;
+    }
+    header > div aside nav ul .chuck_list:hover > *{
+        display: block;
+    }
+    header > div aside nav ul .taylor_list > *:not(:first-child){
+        display: none;
+    }
+    header > div aside nav ul .taylor_list:hover > *{
+        display: block;
+    }
+    header > div div{
+        float: right; vertical-align: middle;
+    }
+    header > div div a{
+        text-decoration: none;
+        line-height: 62px; font-size: 18px;
+    }
+    header > div div a:not(:last-child){
+        float: left;
+    }
+    header > div div a:nth-child(2){
+        margin-left: 10px;
+    }
+    header > div div .material-icons,
+    header > div div .material-icons-outlined{
+        font-size: 28px; margin-left: 15px;
+    }
+    header > div div .material-icons-outlined{
+        vertical-align: 2%; line-height: 64px;
+    }
+    section[class*='list'] div.pager{
+        position: relative; margin: 0 auto; max-width: 500px;
+    }
+    section[class*='list'] div.pager > a{
+        position: absolute; width: 7%; line-height: 90px; text-align: center; font-size: 20px; font-weight: 700;
+        color: #7d7d7d;
+    }
+    section[class*='list'] div.pager > a:first-of-type{
+        left: 0; top: 0; 
+    }
+    section[class*='list'] div.pager > a:last-of-type{
+        right: 0; top: 0;
+    }
+    section[class*='list'] div.pager ol{
+        text-align: center; padding: 20px 17%;
+        box-sizing: border-box;
+    }
+    section[class*='list'] div.pager ol li{
+        display: inline-block;
+    }
+    section[class*='list'] div.pager ol li a{
+        line-height: 45px; width: 50px; display: block;
+        font-size: 20px; font-weight: 500; color: #7d7d7d; background-color: white;
+        border-radius: 25px; transition-duration: 0.5s;
+    }
+    section[class*='list'] div.pager ol li a:hover{
+        box-shadow: 0 5px 20px #dfe0e5;
+        color: black;
+    }
+    footer{
+        padding: 3% 2%;
+        background-color: black;
+    }
+    footer > div{
+        position: relative; padding-left: 15%; box-sizing: border-box;
+    }
+    footer > div:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    footer > div > *:not(address){
+        float: left;
+    }
+    footer > div h2{
+        position: absolute; left: 0; top: 0;
+        width: 13%; max-width: 223px;
+    }
+    footer > div h2 a{
+        display: block;
+    }
+    footer > div h2 a img{
+        width: 100%;
+    }
+    footer > div ul{
+        text-align: left; margin: 0 0 3% 1%; width: 80%;
+    }
+    footer > div ul li{
+        display: inline-block; list-style: none; margin-left: 1%;
+    }
+    footer > div ul li:not(:last-child):after{
+        content: '|'; color: white;
+    }
+    footer > div ul li a{
+        text-decoration: none; color: white; margin-right: 10px;
+    }
+    footer > div address{
+        clear: both;
+        color: white; line-height: 26px; font-size: 14px;
+        font-style: normal; margin-left: 17px;
+    }
+    /* footer fin */
+}
