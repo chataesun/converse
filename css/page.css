@@ -2211,7 +2211,7 @@
         background: url('../images/section8_bg.png') left center / cover no-repeat  rgba(0,0,0,0.5);
     }
     section.storeArea > div{
-        padding: 100px 0;
+        padding: 100px 20px;
         color: #fff;
         background-color: rgba(0,0,0,0.6);
     }
