@@ -5650,6 +5650,9 @@
     section.etc_sign_up_s form ul li label:first-child{
         font-size: 14px; display: block; text-align: left;
     }
+    section.etc_sign_up_s form ul li input#check_all{
+        width: 5%; float: left; 
+    }
     section.etc_sign_up_s form ul li input[type='checkbox']{
         float: left; margin: 0 10px 0 0;
     }
