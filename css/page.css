@@ -5651,7 +5651,7 @@
         font-size: 14px; display: block; text-align: left;
     }
     section.etc_sign_up_s form fieldset input#check_all{
-        width: 5%; float: left; 
+        width: 5%; float: left; display: block;
     }
     section.etc_sign_up_s form ul li input[type='checkbox']{
         float: left; margin: 0 10px 0 0;
